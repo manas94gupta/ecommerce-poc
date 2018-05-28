@@ -1,0 +1,22 @@
+.productlisting {
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+@media screen and (max-width: 950px) {
+    .listingitem {
+        width: 22.5%;
+    }
+}
+
+@media screen and (max-width: 720px) {
+    .listingitem {
+        width: 31.5%;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .listingitem {
+        width: 47.5%;
+    }
+}

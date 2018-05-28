@@ -1,7 +1,9 @@
 import React, { Component } from "react";
+import { Route, Switch } from "react-router-dom";
 
 // Components
-import Header from "./components/Header"
+import Header from "./components/Header";
+import ProductListings from "./components/ProductListings";
 
 // Css
 import "./App.css";
@@ -11,8 +13,11 @@ class App extends Component {
         return (
             <div className="app-container">
                 <Header />
-            </div >
-        )
+                <Switch>
+                    <Route path="/" component={ProductListings} />
+                </Switch>
+            </div>
+        );
     }
 }
 
